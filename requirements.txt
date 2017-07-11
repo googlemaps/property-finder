@@ -1,0 +1,6 @@
+Django==1.11.1
+django-material==1.0.0
+geopy==1.11.0
+googlemaps==2.5.0
+gunicorn==19.7.1
+psycopg2==2.7.1
