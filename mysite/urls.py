@@ -14,6 +14,7 @@
 
 from django.conf import settings
 from django.conf.urls import include, url
+from django.views import static
 from django.contrib.gis import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
@@ -23,11 +24,6 @@ from realty import views
 urlpatterns = [
     url("^", include("realty.urls")),
     url(r'^admin/', admin.site.urls),
+    url(r'^%s(?P<path>.*)$' % settings.STATIC_URL.lstrip('/'), static.serve,
+        kwargs={"document_root": settings.STATIC_ROOT}),
 ]
-
-
-# This enables static files to be served from the Gunicorn server
-# In Production, serve static files from Google Cloud Storage or an alternative
-# CDN
-if settings.DEBUG:
-    urlpatterns += staticfiles_urlpatterns()

@@ -18,7 +18,7 @@ RUN pip install -r /app/requirements.txt
 
 # Add the application source code.
 ADD . /app
-RUN python manage.py collectstatic
+RUN python manage.py collectstatic --noinput
 
 # Run a WSGI server to serve the application. gunicorn must be declared as
 # a dependency in requirements.txt.
