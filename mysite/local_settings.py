@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DB_HOST = "<instance-name>"
+DB_HOST = "/cloudsql/<instance-name>"
 DB_NAME = "<db-name>"
 DB_USER = "<username>"
 DB_PASS = "<password>"
