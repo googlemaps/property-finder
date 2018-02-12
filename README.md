@@ -1,7 +1,7 @@
 Property Finder
 ===============
 
-This project implements a turnkey solution for a ficticious real estate business. It primarily consists of an SQL database with geospatial support (such as [PostgreSQL][postgresql] with the [PostGIS][postgis] extension), which is used to store property information that is then displayed on a map. The [Django framework][django] is used for the back-end, which provides excellent support for geospatial applications via its [GeoDjango][geodjango] extension.
+This project implements a turnkey solution for a fictitious real estate business. It primarily consists of an SQL database with geospatial support (such as [PostgreSQL][postgresql] with the [PostGIS][postgis] extension), which is used to store property information that is then displayed on a map. The [Django framework][django] is used for the back-end, which provides excellent support for geospatial applications via its [GeoDjango][geodjango] extension.
 
 
 Overview
