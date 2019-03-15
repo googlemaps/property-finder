@@ -1,4 +1,4 @@
-Django==1.11.18
+Django==1.11.19
 django-material==1.0.0
 geopy==1.11.0
 googlemaps==2.5.0
